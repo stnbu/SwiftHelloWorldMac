@@ -8,6 +8,7 @@
 
 import Cocoa
 
+@NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
                             
     @IBOutlet var window: NSWindow?
@@ -15,18 +16,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet var name : NSTextField!
     @IBOutlet var outputField : NSTextField!
 
-    func applicationDidFinishLaunching(aNotification: NSNotification?) {
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         self.outputField.stringValue = "Hello, World!"
     }
 
-    func applicationWillTerminate(aNotification: NSNotification?) {
+    func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
 
 
-    @IBAction func buttonPushed(sender : AnyObject) {
-        var name = self.name.stringValue
+    @IBAction func buttonPushed(_ sender : AnyObject) {
+        let name = self.name.stringValue
         
         if name.isEmpty {
             self.outputField.stringValue = "Come again?"

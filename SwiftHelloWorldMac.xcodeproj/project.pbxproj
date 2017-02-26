@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE5DDB19193EC4F800D083E0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5DDB18193EC4F800D083E0 /* main.swift */; };
 		FE5DDB1B193EC4F800D083E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5DDB1A193EC4F800D083E0 /* AppDelegate.swift */; };
 		FE5DDB1D193EC4F800D083E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5DDB1C193EC4F800D083E0 /* Images.xcassets */; };
 		FE5DDB20193EC4F800D083E0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE5DDB1E193EC4F800D083E0 /* MainMenu.xib */; };
@@ -27,7 +26,6 @@
 /* Begin PBXFileReference section */
 		FE5DDB13193EC4F800D083E0 /* SwiftHelloWorldMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftHelloWorldMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5DDB17193EC4F800D083E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE5DDB18193EC4F800D083E0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		FE5DDB1A193EC4F800D083E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE5DDB1C193EC4F800D083E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FE5DDB1F193EC4F800D083E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				FE5DDB17193EC4F800D083E0 /* Info.plist */,
-				FE5DDB18193EC4F800D083E0 /* main.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -158,9 +155,11 @@
 				TargetAttributes = {
 					FE5DDB12193EC4F800D083E0 = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0810;
 					};
 					FE5DDB24193EC4F800D083E0 = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0810;
 						TestTargetID = FE5DDB12193EC4F800D083E0;
 					};
 				};
@@ -209,7 +208,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE5DDB1B193EC4F800D083E0 /* AppDelegate.swift in Sources */,
-				FE5DDB19193EC4F800D083E0 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +326,7 @@
 				INFOPLIST_FILE = SwiftHelloWorldMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -339,6 +338,7 @@
 				INFOPLIST_FILE = SwiftHelloWorldMac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -359,6 +359,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -376,6 +377,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -399,6 +401,7 @@
 				FE5DDB31193EC4F800D083E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE5DDB32193EC4F800D083E0 /* Build configuration list for PBXNativeTarget "SwiftHelloWorldMacTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +410,7 @@
 				FE5DDB34193EC4F800D083E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
